@@ -46,8 +46,49 @@ tr:nth-child(odd) td:nth-child(even) {
     background-color: #98ecb8;
     width: 20px;
 }
+/* Вестрка макета страницы */
+
+.bold {            
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+    font-style: italic;
+}
+
+p.bold, p.green, p.red, p.blue, a[href^='https://chesspro']{
+    margin: 20px;
+}
+
+/* Stars */
+body {text-align: center;}
 
 
+.stars {display: inline-block;}
 
 
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
 
+div.star{background: url("../img/star1.png") no-repeat;
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-left: 20px; 
+}
+
+
+.star:hover, div:nth-child(-n+5):hover ~ div{background: url("../img/star2.png") no-repeat;}
