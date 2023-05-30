@@ -1,0 +1,41 @@
+@media all and (max-width: 900px) {
+    .main {
+        background: rgb(224, 185, 134);
+    }
+
+    .content_main {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .menu {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .menu_in li {
+        display: inline;
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    img {
+        float: none;
+    }
+
+    p {
+        text-align: left;
+        padding-bottom: 10px;
+    }
+
+    h2,
+    h3,
+    ul {
+        padding: 10px;
+    }
+
+}

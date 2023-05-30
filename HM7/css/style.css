@@ -1,0 +1,60 @@
+body {
+    font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    background-color: #afc9dc;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.main {
+    background: url(../img/ball3.png) repeat-y right top, url(../img/11.jpg) repeat-y left top;
+}
+
+.menu {
+    width: 150px;
+    float: left;
+}
+
+h1 {
+    color: rgb(31, 31, 110);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Arial', Verdana, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solod white;
+}
+
+h3 {
+    padding-left: 20px;
+}
+
+ul {
+    padding: 30px;
+}
+
+img {
+    float: left;
+    padding-right: 10px;
+}
+
+.content {
+    background-color: #ffffff7a;
+}
+
+.content_main {
+    margin-left: 150px;
+    padding-left: 50px;
+    margin-right: 100px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #afc9dc;
+    padding: 5px;
+}
