@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        h1, p, img{
+            padding: 10px;
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+<h1>Тег "picture"</h1>
+<p>Интересные возможности:</p>
+<ul style="list-style: circle;">
+<li><strong>Можно реализовать отображение изображений в webp, если не поддерживается, то отобразится jpeg</strong><br>
+    
+   <code> &lt;picture>
+    &lt;source srcset="test.avif" type="image/jpg"><br>
+    &lt;source srcset="test.webp" type="image/webp"><br>
+    &lt;img src="test.png" alt="test image"><br>
+    &lt;/picture>&lt;/code>
+</li>
+<li><strong> Разные изображения под разные размеры экрана. Но!!! Конкурент тег img.</strong><br>
+   <code> &lt;img srcset="small-car-image.jpg 400w,<br>
+    medium-car-image.jpg 800w,<br>
+    large-car-image.jpg 1200w"<br>
+sizes="(min-width: 1280px) 1200px,<br>
+   (min-width: 768px) 400px,<br>
+   100vw"<br>
+
+src="medium-car-image.jpg" alt="Car"></li></code>
+<li><strong>Подстройка изображений под ориентацию устройства</strong> </li>
+<li><strong>Подстройка изображений под плотность пикселей. Вариант подстройки изображений под ретину.</strong> </li>
+</ul>
+
+  <p>Вариант оформления. Тег "picture". Под различные размеры экрана</p>
+    <picture>
+        <source media="(min-width: 1600px)" srcset="../img/11.jpg">        
+        <source media="(min-width: 1200px)" srcset="../img/processed.png">        
+        <source media="(min-width: 600px)" srcset="../img/processed.jpg">
+        <img src="../img/1.jpg" alt="Flowers" style="width:100%;">
+      </picture>  
+     
+      <p>Вариант оформления. Тег "picture". Под различные варианты ориентации. <em>Вопрос как оттестировать при помощи консоли?</em> </p>
+      <picture>
+     
+        <source media="(orientation: landscape)"
+                  
+           srcset="../img/11.jpg 200w,
+           ../img/processed.png 600w,
+           ../img/processed.jpg 1000w"
+                  
+           sizes="(min-width: 700px) 500px,
+                  (min-width: 600px) 400px,
+                  100vw">
+          
+        <source media="(orientation: portrait)"
+                  
+           srcset="../img/11.jpg 700w,
+           ../img/processed.png 1200w,
+                   ../img/processed.jpg 1600w"
+                  
+           sizes="(min-width: 768px) 700px,
+                  (min-width: 1024px) 600px,
+                  500px">
+          
+        <img src="../img/1.jpg" alt="page">
+     </picture>
+
+</body>
+</html>
