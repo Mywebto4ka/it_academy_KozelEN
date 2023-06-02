@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>@media all and (min-width: 600px) {
+     .in { width: 300px; } 
+    select {width: 308px;} 
+    p{display: inline-block;
+    width: 200px;}  
+    }
+    /* label::after{content: '<br>'         
+    } */
+    form > p:first-child{display: block;
+        width: auto;
+    }
+    input[radio], div{display: inline-block; 
+    }
+   div p{width: auto;}
+    
+    </style>
+    <title>Form</title>
+</head>
+<body>
+    
+        <form action="http://fe.it-academy.by/TestForm.php" method="post">
+            
+            <p>Для публикации вашей статьи, заполните пожалуйста следующую форму:</p><br>
+            <label><br>
+            <p>Название статьи:</p>
+            <input type="text" name="text" class="in">                
+            </label><br>
+            <label>
+               <p>Рубрика:</p>
+                <select name="rubrika">                    
+                        <option value="1">компьютерная техника</option>
+                        <option value="2">графика и дизайн</option>
+                        <option value="3" selected>программирование</option>
+                </select>                
+            </label><br>
+            <label> <p>Публикация:</p>            
+                  <div><p><input type="radio" name="public" value="1">на сайте</p>
+                    <p><input type="radio" name="public" value="2">в журнале</p>
+                    <p><input type="radio" name="public" value="3">на сайте и в журнале</p></div>
+             </label><br>
+             <label>
+                <p class="kom">Разрешить комментарии:</p>
+                <input type="checkbox" checked name="komment">
+             </label><br>
+             <label>
+               <p>Текст статьи:</p> 
+                <textarea name="text" class="in">                    
+            </textarea> 
+             </label><br>
+             <input type="submit" value="Опубликовать">                  
+</body>
+</html>

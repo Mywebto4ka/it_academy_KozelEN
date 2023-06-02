@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
     <style>
         h1, p, img{
@@ -21,7 +21,7 @@
 <li><strong>Можно реализовать отображение изображений в webp, если не поддерживается, то отобразится jpeg</strong><br>
     
    <code> &lt;picture>
-    &lt;source srcset="test.avif" type="image/jpg"><br>
+    &lt;source srcset="test.jpg" type="image/jpg"><br>
     &lt;source srcset="test.webp" type="image/webp"><br>
     &lt;img src="test.png" alt="test image"><br>
     &lt;/picture>&lt;/code>
@@ -47,7 +47,7 @@ src="medium-car-image.jpg" alt="Car"></li></code>
         <img src="../img/1.jpg" alt="Flowers" style="width:100%;">
       </picture>  
      
-      <p>Вариант оформления. Тег "picture". Под различные варианты ориентации. <em>Вопрос как оттестировать при помощи консоли?</em> </p>
+      <p>Вариант оформления. Тег "picture". Под различные варианты ориентации. <em>Вопрос как оттестировать при помощи консоли? Зачем указывать атрибут type?</em> </p>
       <picture>
      
         <source media="(orientation: landscape)"
