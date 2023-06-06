@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       
+         .circle{
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        border-radius: 50px;
+        background-color: aquamarine;
+        animation: testAnim 3s infinite;
+            }
+        .oval{width: 200px; 
+            height: 100px;
+            margin: 20px;
+            background: #bb2577;
+            border-radius: 100px/50px;}
+            .oval:hover{animation: testAnim 3s infinite;
+            }
+        .treyg{width: 0; 
+                 height: 0;
+                 border-left: 50px solid transparent;
+                 border-right: 50px solid transparent;
+                 margin: 20px;
+                border-bottom: 100px solid #ce8f3c;
+            }
+            .treyg:hover{animation: Anim 5s infinite;               
+            }
+
+            .star {
+                margin: 50px 0; 
+                height: 0; 
+                width: 0;
+                position: relative;
+                border-right: 50px solid transparent;
+                border-bottom: 35px solid #E7337A;
+                border-left: 50px solid transparent;
+                transform: rotate(35deg);
+                }
+                .star:before, 
+                .star:after {
+                content: "";
+                height: 0; 
+                width: 0;
+                position: absolute;
+                }
+                .star:before {
+                top: -26px; 
+                left: -32px;
+                border-bottom: 40px solid #E7337A;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                transform: rotate(-35deg);
+                }
+                .star:after {
+                top: 2px; 
+                left: -53px;
+                border-right: 50px solid transparent;
+                border-bottom: 35px solid #E7337A;
+                border-left: 50px solid transparent;
+                transform: rotate(-70deg);
+                }   
+                div.main:hover{animation: test 3s infinite; 
+                    transition-duration: .2s;                   
+                }
+                @keyframes testAnim {
+            from{
+                border-radius: 0;
+            }
+            50%{
+                border-radius: 50%;
+            }
+            60%{
+               margin-left: 100px;
+            }
+            70%{
+               margin-left: 0;
+            }
+            to{
+                border-radius: 0;
+                background-color: red;
+            }
+            } 
+     @keyframes test{ 
+        from{
+            margin-left: 100px
+        }
+        50%{
+            margin-left: 50px;
+        }
+        60%{
+            margin-left: 40px;;
+        }
+        70%{
+           margin-left: 20px;
+        }
+        to{
+            margin-left: 0;
+            
+        }}
+        @keyframes Anim {
+            from{
+                border-color: red;
+            }
+            50%{
+                border-color: blue;
+            }
+            60%{
+                border-color: green;
+            }
+            70%{
+                border-color: yellow;
+            }
+            to{
+                border-color: red;
+                
+            }
+            } 
+
+
+
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="circle"></div>
+        <div class="oval"></div>
+        <div class="treyg"></div>
+        <div class="main"><div class="star"></div></div>
+    </div>
+
+
+
+   
+</body>
+</html>
