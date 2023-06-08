@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .sprite_box {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            /*чтобы картинка была по центру*/
+        }
+
+        #sprite {
+            width: 64px;
+            height: 111px;
+            background: url('img/fair.png') 0 0;
+            /*картинка со спрайтами с позицией в верхнем левом углу (0px 0px)*/
+            animation: MyAnimation 1s steps(16) infinite, Step 15s linear infinite;
+            /*анимация называется MyAnimatio, скорость анимации 1s, нужно сделать 16 шагов (16 кадров), анимация происходит непрерывно (зациклено) - infinite*/
+            /*ещё одна анимация, длительностью 15s, линейный, зацикленый*/
+            position: absolute;
+            left: 0;
+        }
+
+        @keyframes MyAnimation {
+            100% {
+                background-position: -1024px;
+                /*ширина картинки со спрайтами*/
+            }
+        }
+
+        @keyframes Step {
+            100% {
+                left: 100%;
+                /*передвижение влево до самого конца*/
+            }
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="sprite_box">
+        <div id="sprite">
+        </div>
+    </div>
+</body>
+
+</html>

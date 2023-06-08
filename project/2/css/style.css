@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Roboto;
+   
 }
 
 .ad_menu {
@@ -116,15 +117,19 @@ button::after {
     top: 17px;
 }
 
-.content {
-    width: 848px;
+.content {width: 1620px;
+    margin-left: auto; 
+    margin-right: auto;       
+    
+}
+
+.slider{margin-top: 388px;
     font-weight: 700;
     font-size: 64px;
     line-height: 115%;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin-top: 388px;
-}
+    width: 848px;}
 
 .button2 {
     width: 207px;
@@ -139,3 +144,73 @@ button::after {
     color: #FFFFFF;
     margin-top: 100px;
 }
+.content_first{position: relative;
+    margin-bottom: 100px;
+}
+h1::after, h2::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    background-color: #FFCB58;
+    top: 257px;
+    left: 55px;
+    transform: translate(-50%, 0);
+    height: 10px;
+    width: 115px;
+  }
+  h1{font-size: 64px;
+    padding-top: 50px;
+}
+ul.element_first{margin-top: 140px;
+
+}
+.vec1{display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 400px;
+}
+li img{display: inline-block;
+    padding-right: 20px;
+    border-right: 3px solid rgb(215, 215, 215);
+    margin-right: 20px;  
+}
+.element_second{
+    display: flex;
+  flex-direction: column;
+    position: relative;
+    margin-top: 200px;
+    padding-top: 1px;
+
+}
+.element_second  div p{font-weight: 400;
+    font-size: 18px;
+    line-height: 175%;    
+    letter-spacing: 0.03em;    
+    color: #2C2C2C;
+    margin-bottom: 32px;
+}
+.element_second  div p.pbold{font-weight: 700;
+    font-size: 28px;
+    line-height: 130%;
+    margin-bottom: 32px;
+}
+h2{font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 115%;    
+    letter-spacing: 0.03em;
+    padding-bottom: 127px;
+ }
+ h2::after{top: 175px;
+ }
+ div.element_second.content > div{width: 60%;
+ }
+ div.element_second.content > ul{display: flex;
+flex-direction: column;
+width: 40%;
+}
+div.element_second.content > li{
+    
+}
+ 
+
