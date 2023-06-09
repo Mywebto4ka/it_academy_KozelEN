@@ -1,0 +1,14 @@
+body{margin: 0px; font-family: 'Tahoma', Geneva, Verdana, sans-serif;}
+.header{background-color: #afc9dc; padding: 5px; overflow: hidden;}
+h1{color: rgb(31, 31, 110); text-align: center; text-transform: uppercase; font-family: 'Arial', Verdana, sans-serif;}
+.content{display: flex; flex-direction: row;  background: linear-gradient(#ffffffa3, #ffffffa3), url(../img/ball3.png) repeat-y right top;}
+.first{width: 150px; background-color: rgb(255, 255, 172);}
+h3{padding-left: 20px;}
+ul{padding: 30px;}
+.second{padding: 20px; padding-right: 100px;}
+h2{display: inline-flex; text-align: center; text-transform: uppercase; border: 1px solod white;}
+img{float: left; padding-right: 10px;}
+.footer{width: 100%; background-color: #afc9dc; padding: 5px;}
+
+
+
