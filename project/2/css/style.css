@@ -3,8 +3,9 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Roboto;
-   
+
 }
+html { overflow-x:  hidden; }
 
 .ad_menu {
     position: fixed;
@@ -106,7 +107,7 @@ button {
     font-size: 16px;
 }
 
-button::after {
+button.top::after {
     content: "";
     background-repeat: no-repeat;
     background-image: url(../img/Vector_70.png);
@@ -117,19 +118,22 @@ button::after {
     top: 17px;
 }
 
-.content {width: 1620px;
-    margin-left: auto; 
-    margin-right: auto;       
-    
+.content {
+    width: 1620px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
-.slider{margin-top: 388px;
+.slider {
+    margin-top: 388px;
     font-weight: 700;
     font-size: 64px;
     line-height: 115%;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    width: 848px;}
+    width: 848px;
+}
 
 .button2 {
     width: 207px;
@@ -144,10 +148,14 @@ button::after {
     color: #FFFFFF;
     margin-top: 100px;
 }
-.content_first{position: relative;
+
+.content_first {
+    position: relative;
     margin-bottom: 100px;
 }
-h1::after, h2::after{
+
+h1::after,
+h2::after {
     content: "";
     position: absolute;
     width: 50%;
@@ -157,89 +165,237 @@ h1::after, h2::after{
     transform: translate(-50%, 0);
     height: 10px;
     width: 115px;
-  }
-  h1{font-size: 64px;
+}
+
+h1 {
+    font-size: 64px;
     padding-top: 50px;
 }
-ul.element_first{margin-top: 140px;
+
+ul.element_first {
+    margin-top: 140px;
 
 }
-.vec1{display: flex;
+
+.vec1 {
+    display: flex;
     flex-direction: row;
     align-items: center;
     width: 400px;
 }
-li img{display: inline-block;
+
+li img {
+    display: inline-block;
     padding-right: 20px;
     border-right: 3px solid rgb(215, 215, 215);
-    margin-right: 20px;  
+    margin-right: 20px;
 }
-.element_second{   
+
+.element_second {
     margin-top: 200px;
     padding-top: 1px;
     position: relative;
 }
-.left  div p{font-weight: 400;
+
+.left div p {
+    font-weight: 400;
     font-size: 18px;
-    line-height: 175%;    
-    letter-spacing: 0.03em;    
+    line-height: 175%;
+    letter-spacing: 0.03em;
     color: #2C2C2C;
     margin-bottom: 32px;
 }
-.left  div p.pbold{font-weight: 700;
+
+div p.pbold {
+    font-weight: 700;
     font-size: 28px;
     line-height: 130%;
     margin-bottom: 32px;
 }
-.left li{display: flex;
-    align-items: center;}
-    li svg{ margin-right: 20px;}
-h2{font-style: normal;
+
+.left li {
+    display: flex;
+    align-items: center;
+}
+
+li svg {
+    margin-right: 20px;
+}
+
+h2 {
+    font-style: normal;
     font-weight: 700;
     font-size: 56px;
-    line-height: 115%;    
+    line-height: 115%;
     letter-spacing: 0.03em;
     padding-bottom: 127px;
     padding-top: 100px;
     width: 100%;
-    
- }
- h2::after{top: 272px;
-     }
- .text_second{width: 60%;
- }
- 
- div.left.content > ul{display: flex;
-flex-direction: column;
-width: 40%;
-padding-left: 100px;
-font-weight: 700;
-font-size: 28px;
-line-height: 130%;
+
 }
-.left{ display: flex;
-    flex-direction: row; 
+
+h2::after {
+    top: 272px;
+}
+
+.text_second {
+    width: 60%;
+}
+
+div.left.content>ul {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-left: 100px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 130%;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
     position: relative;
-     padding-bottom: 186px;
+    padding-bottom: 186px;
 }
-section.image{background-image: url(../img/main.jpg);
+
+section.image {
+    background-image: url(../img/main.jpg);
     height: 401px;
     position: relative;
     left: 100px;
 
 }
-img.img_second{
+
+img.img_second {
     position: absolute;
     top: 200px;
     left: 800px;
-   z-index: -1;
+    z-index: -1;
 }
-.logist{    position: relative;
+
+.logist {
+    position: relative;
     right: 120px;
     background-color: #FFFFFF;
     margin-top: -100px;
     padding-right: 40px;
-     padding-left: 100px;}
-    .logist h2::after {
-        margin-left: 100px;
-    }
+    padding-left: 100px;
+}
+
+.logist h2::after {
+    margin-left: 100px;
+}
+
+.logist2 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding-bottom: 186px;
+    width: 60%;
+}
+
+.text_logist2 ul {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text_logist2 ul li {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.logist2_notice {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.button_logist2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #4c4c4c;
+    border-bottom: 1px solid #4c4c4c;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 145%;
+}
+
+.but_logist2 {
+    align-self: center;
+    padding: 15px 40px 16px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    width: 217px;
+    height: 56px;
+    background: #000000;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 155%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.logist2_right {
+    padding-left: 40px;
+    margin-left: 40px;
+}
+.footer{background: #000000;
+    color: #FFFFFF;
+}
+.footer_menu{display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 48px 0px 24px;
+justify-content: space-around;
+}
+footer ul{font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #CECECE;
+    display: flex;
+flex-direction: column;
+}
+.small_li{ont-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;  
+}
+footer ul li{padding-top: 10px;
+}
+.footer_link{display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.social img{padding-right: 10px;
+    padding-bottom: 40px;}
+.footer_link ul {flex-direction: row;
+    
+align-content: flex-start;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 160%;
+}
+.bottom{display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding-top: 20px;
+padding-bottom: 40px;
+border-top: 1px solid #fff;}
