@@ -7,20 +7,64 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>@media all and (min-width: 600px) {
-     .in { width: 300px; } 
-    select {width: 308px;} 
-    p{display: inline-block;
-    width: 200px;}  
-    }
-    /* label::after{content: '<br>'         
-    } */
-    form > p:first-child{display: block;
-        width: auto;
-    }
-    input[radio], div{display: inline-block; 
-    }
-   div p{width: auto;}
+     <style>
+     
+        @media screen and (max-width:2560px) {
+            span {
+                display: inline-block;
+                margin: 5px 0px;
+            }
+
+            [type=text] {
+                position: absolute;
+                right: 10px;
+                left: 200px;
+            }
+
+            select {
+                position: absolute;
+                left: 200px;
+                right: 10px;
+            }
+
+            textarea {
+                position: absolute;
+                right: 10px;
+                left: 10px;
+            }
+
+            .none {
+                display: none;
+            }   
+        }
+
+        @media screen and (max-width:600px) {
+            span {
+                display: inline-block;
+                margin: 5px 0px;
+            }
+
+            [type=text] {
+                position: absolute;
+                right: 10px;
+                left: 10px;
+            }
+            
+            select {
+                position: absolute;
+                left: 10px;
+            }
+
+            textarea {
+                position: absolute;
+                right: 10px;
+                left: 10px;
+            }
+                .none {
+                display: initial;
+            } 
+        }
+    
     
     </style>
     <title>Form</title>
