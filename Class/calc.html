@@ -10,26 +10,30 @@
 
 <body>
     <table>
-        <tr>
+        <tr><td>
             <input type="button" value="1" onclick="getNumber(1)">
             <input type="button" value="2" onclick="getNumber(2)">
             <input type="button" value="3" onclick="getNumber(3)">
             <input type="button" value="4" onclick="getNumber(4)">
-        </tr><br>
-        <tr>
+        </td>
+        </tr>
+        <tr><td>
             <input type="button" value="5" onclick="getNumber(5)">
             <input type="button" value="6" onclick="getNumber(6)">
             <input type="button" value="7" onclick="getNumber(7)">
             <input type="button" value="8" onclick="getNumber(8)">
-        </tr><br>
-        <tr>
+        </td></tr>
+        <tr><td>
             <input type="button" value="9" onclick="getNumber(9)">
-            <input type="button" value="=" onclick="getResult('=')"><br>
+            <input type="button" value="=" onclick="getResult('=')">
             <input type="button" value="+" onclick="getOperation('+')">
-            <input type="button" value="-" onclick="getOperation('-')">
-            <input type="button" value="/" onclick="getOperation('/')">
+            <input type="button" value="-" onclick="getOperation('-')"></td>
+            
         </tr>
+        <tr><td>
+        <input type="button" value="/" onclick="getOperation('/')">
         <input type="button" value="*" onclick="getOperation('*')">
+    </td></tr>
 
     </table>
     <script>
