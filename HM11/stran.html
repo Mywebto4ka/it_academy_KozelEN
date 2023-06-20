@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>11</title>
 </head>
 <body>
+  <div style="text-align:center">
+    <input type="button" value="Ввод информации о стране" onclick="setInfo()"> <br><br>
+    <input type="button" value="Получение информации о стране" onclick="getInfo()"><br><br>
+    <input type="button" value="Перечень всех стран" onclick="listC()"><br><br>
+    <input type="button" value="Удалить  информацию о стране" onclick="deleteInfo()">
+</div>
+    <script>
+var countryInfo={};
+ 
+
+ function setInfo(countryName,capitalName) {
+         var countryName = prompt("Пожалуйста, введите страну");
+         var capitalName = prompt("Пожалуйста, введите столицу");
+         countryInfo[countryName] = capitalName;
+        
+     }
+ 
+ function getInfo(countryName) {
+     var сountryName=prompt('Пожалуйста, введите страну');
+ if ( сountryName in countryInfo )
+     alert( 'Страна: ' + сountryName + ' Столица: ' + countryInfo[сountryName] );
+ else
+     alert( 'Нет информации о стране!' );
+ 
+ }
+ 
+ function deleteInfo(countryName) {
+     var countryName = prompt("Пожалуйста, введите страну");
+     delete countryInfo[countryName]
+     console.log(countryInfo)
+ }
+ function listC() {
+  var res = "";
+  for (var i in countryInfo) res += "\n" +  console.log('Страна: ' + i + ' Столица: ' + countryInfo[i]);
+  return res;
+}
+
+
+
+    </script>
     
+
+
+
+
 </body>
 </html>

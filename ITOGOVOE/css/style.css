@@ -94,7 +94,10 @@ p {
   font-weight: 500;
   line-height: 15px;
   color: #4664a0;
+  text-align: right;
+  width: 100%;
 }
+
 .call div a {
   font-size: 15px;
   font-weight: 700;
@@ -113,19 +116,19 @@ p {
 }
 .menu {
   background: #4664a0;
-  border: 1px solid red;
+ 
 }
 .menu div ul {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid red;
+  
 }
 .menu div li {
   display: inline-block;
   padding: 15px 30px 18px 30px;
-  border: 1px solid yellow;
+ 
 }
 .menu div li a {
   color: #fff;
