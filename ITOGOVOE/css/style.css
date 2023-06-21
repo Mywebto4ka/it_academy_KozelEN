@@ -339,11 +339,12 @@ div.owl-nav > button.owl-prev > img {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.sertificat {
-  background-color: #323232;
-}
+
 .contact_form {
   background: url("../img/contact_form.jpg") no-repeat center;
+}
+.contact_form h2{
+  width: 100%;
 }
 .zayavka1,
 .zayavka2 {
@@ -352,11 +353,16 @@ div.owl-nav > button.owl-prev > img {
   align-items: center;
   justify-content: center;
 }
-.zayavka {
+.zayavka {display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+.zayavka1{padding-right: 70px;}
+.zayavka div input{
+  margin-bottom: 20px;
+  padding-left: 10px;
 }
 .call1,
 .call2 {
@@ -366,29 +372,47 @@ div.owl-nav > button.owl-prev > img {
   border-radius: 5px;
   border-width: 0;
   color: #fff;
+  
 }
 .zayavka2 a {
   font-size: 25px;
   font-weight: 700;
   line-height: 25px;
   text-align: left;
-
   color: #fff;
 }
-.zayavka input {
+.zayavka input{
   width: 495px;
   border-radius: 5px;
   border: 0;
   height: 40px;
+ 
 }
-textarea {
+div.zayavka1  form  div input.call1, div.zayavka2  form  div input.call2{
+  width: 509px;
+ 
+}
+input.call1{ margin-top: 20px;}
+.zayavka h2{padding-bottom: 30px;}
+
+
+textarea{
   width: 495px;
   border-radius: 5px;
+  
+  padding-top: 10px;padding-left: 10px;
+  color: #6F6F6F;
+  
 }
 .logo_call {
   display: flex;
   align-content: center;
 }
+.tel_link{display: flex;
+  padding-bottom: 16px;
+}
+.tel_link img{padding-right: 10px;}
+.tel_link div p{color: #fff;}
 .footer {
   background-color: #101010;
 }
@@ -477,7 +501,7 @@ margin-bottom: 30px;}
 .sendvich_block2 img{float: right; 
 }
 
-.yteplit_block h4, .ytep{
+.yteplit_block h4, .ytep, .article  h4{
  text-align: left;  
  color: #333333;
  padding-top: 20px;
@@ -487,4 +511,34 @@ margin-bottom: 30px;}
   .yteplit_block{display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
+  .owl-carousel .owl-item img {
+   width: auto;}
+   .sertificat_block{
+    padding-bottom: 85px;
+   }
+   .sertificat {
+    background-color: #323232;
+    width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .icon_send{display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .icon_send_element{padding-left: 36px;}
+  .icon_send_element p{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    }
+    .icon_send_element img{
+      padding-bottom: 18px;
+    }
+    .vne{text-align: center;
+    padding-bottom: 30px;}
+    .icon_top{
+      position: relative;
+      right: 40px;    }
+      .last{padding-bottom: 70px;}
