@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>Сталь-профиль</title>
 </head>
@@ -20,9 +21,9 @@
     <!-- https://www.figma.com/file/1QowmtwbLr4Thh9PIjImNE/%D0%A1%D1%82%D0%B0%D0%BB%D1%8C-%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C?type=design&node-id=2-2&t=SeNGAC8NKpGsqqaw-0 -->
     <div class="header ">
         <div class="ad_menu container">
-            <div>
+            <div><a href="index.html">
                 <img src="img/logo.png" alt="logo_era_style">
-                <img src="img/era_style.png" alt="era_style">
+                <img src="img/era_style.png" alt="era_style"></a>
             </div>
 
             <input class="calc1" type="button" value="Калькулятор сэндвич панелей" onclick="">
@@ -48,7 +49,7 @@
                 <ul>
                     <li><a href="/"><img src="img/home.svg" alt="instagram_logo" width="20px" height="20px"></a></li>
                     <li><a href="sandvich.html">Сэндвич панели</a></li>
-                    <li><a href="">Металлоконструкции</a></li>
+                    <li><a href="metall.html">Металлоконструкции</a></li>
                     <li><a href=""> Портфолио</a></li>
                     <li><a href="">Сертификаты</a> </li>
                     <li><a href="">Контакты</a> </li>
@@ -319,6 +320,22 @@
             });
         });
     </script>
-</body>
+    <script> 
+        $(document).ready(function() {
+          $('img').addClass('animated'); 
+        })     
+    
+        </script>
+        <script>
+            $(document).ready(function() {
+            $('img.animated').hover(
+     function() {
+      $(this).addClass('animate__zoomIn'); // Добавляем класс 
+     },
+     function() {
+      $(this).removeClass('animate__zoomIn'); // Убираем класс
+     }
+    )})</script>
 
+</body>
 </html>

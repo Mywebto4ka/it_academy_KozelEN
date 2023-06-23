@@ -16,6 +16,7 @@ h1 {
   font-size: 25px;
   font-weight: 700;
   line-height: 60px;
+  margin-top: -10px;
 }
 
 h2 {
@@ -542,4 +543,28 @@ margin-bottom: 30px;}
       position: relative;
       right: 40px;    }
       .last{padding-bottom: 70px;}
-      .
+     
+.metal_block{ display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.metal_img img{width: 264px;
+  height: 175px;
+}
+.metal_img p{
+
+}
+.metal_img{box-shadow: 0px 4px 4px 0px #0000000D;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  margin-bottom: 88px;
+
+}
+
