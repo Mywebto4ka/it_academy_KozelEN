@@ -1,0 +1,11 @@
+@media all and (max-width: 600px){
+   .container {
+      width: 100vw;}
+      iframe, .contact_form, .partner, .sertificat{display: none;}
+       
+      .metal_block, .breadcrumbs{flex-direction: column;}
+
+      .met_article1,  .met_article2, #article1{grid-template-columns: 1fr;}
+      .met_article1 img,  .met_article2 img{display: none;}
+      div.article div.button_port{margin-left: 0;}
+} 

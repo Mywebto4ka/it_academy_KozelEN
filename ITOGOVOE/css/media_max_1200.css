@@ -1,0 +1,56 @@
+@media all and (max-width: 1200px) {
+   
+   
+        .header, .first_img, .priem, .sandvich, .count, .proizvodstvo, .o_nas, .partner, .sertifikat, .contact_form, .footer
+        {width: 100%;
+     } 
+     
+     
+   
+    .container {
+        width: 100vw;}
+        .home, .footer_block  div, .ad_menu_social{margin: 10px;}
+
+
+        .container h2{padding-top: 10px;
+            padding-bottom: 20px;
+            font-size: 28px;
+        }  
+            .block_element{width: 150px;
+
+            }
+            .sandvich_block_element{
+                margin: 10px 10px;
+                justify-content: center;
+            }
+            .sandvich_block{justify-content: center;}
+
+            .count_content {
+            justify-content: center;}
+            .owl-nav{display: none;}
+            .proizvodstvo_block{justify-content: center;
+                }
+            .proizvodstvo_element{margin: 10px;
+            }
+            .zayavka{flex-direction: column;
+            background-color:rgb(130, 132, 134);
+        }
+            .zayavka2{    margin-left: -61px}
+            .zayavka h2{margin-left: -72px;
+
+            }
+            .partner2{
+                justify-content: space-around;
+            
+            }
+            .left_menu{display: none;}
+            .article, .metal_block, .breadcrumbs, .met_article1,  .met_article2, .send_top + p, .sendvich_block2, .yteplit_block, .ytep + p {
+                padding-left: 10px;
+            padding-right: 10px;}    
+            .icon_send{flex-wrap: wrap;
+                justify-content: center;}
+                .header, .footer{padding-left: 10px;
+                padding-right: 10px;}
+
+
+        }
